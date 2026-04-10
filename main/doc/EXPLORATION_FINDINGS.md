@@ -164,6 +164,42 @@ Key Percentiles:
 
 ---
 
+## 6A. WEATHER VS AMBIENT (AGGREGATE VS INDIVIDUAL)
+
+External weather temperature shows **strong aggregate correlation** with power, but this is misleading at container level:
+
+- **Power ↔ Weather Temp (hourly aggregate):** ~0.80 (strong)
+- **Power ↔ Reefer Ambient (individual):** ~0.17 (weak)
+- **Weather Temp ↔ Reefer Ambient:** ~0.997 (near-perfect)
+
+**Interpretation:** Weather and reefer ambient sensors measure the same environment. The strong correlation emerges only after hourly aggregation across all containers. At the container level, **hardware dominates** and ambient is a weaker signal.
+
+**Implication:** Use a unified `effective_temp` feature (ambient first, fallback to weather) plus rolling/lag features and interaction terms rather than raw ambient alone.
+
+---
+
+## 6B. WIND SPEED CAUTION
+
+Wind speed shows **negative correlation** with power at hourly level (around -0.20 overall, stronger in some months). This is **likely confounding**: high wind coincides with colder air, which lowers cooling demand.
+
+**Implication:** Use wind only as a secondary lag feature if at all; do not treat it as a causal driver.
+
+---
+
+## 6C. CONTAINER LIFECYCLE & WEAR EFFECTS (FROM BLUEPRINT)
+
+Additional operational signals that matter:
+
+- **Wear proxy:** cumulative energy (`TtlEnergyCons`) correlates with higher power (r≈0.30), with up to **~172%** spread from least-used to most-used containers.
+- **Visit lifecycle:** containers draw ~**9.6% more** power during the first ~12 hours of a visit (stabilization effect).
+
+**Implication:** Create wear/lifecycle features per container visit, then aggregate hourly:
+
+- `wear_quintile_share` or `avg_ttl_energy_cons`
+- `hours_since_visit_start` and `fresh_visit_share`
+
+---
+
 ## 7. TEMPORAL PATTERNS (Hourly Cycle)
 
 ### Power by Hour of Day (UTC)
@@ -257,9 +293,10 @@ Based on the data patterns:
    - 13% daily cycle
    - Highly predictable pattern
 
-4. **Ambient Temperature** ✓ Important
-   - 0.156 correlation with power
-   - Natural physical driver
+4. **Ambient / Effective Temp** ✓ Important
+   - 0.156 correlation with power (individual)
+   - Strong aggregate relationship, best used with rolling and interaction features
+   - Use `effective_temp = ambient (if available) else weather`
 
 5. **Container Size** ✓ Minor
    - 2-27% effect depending on type
@@ -286,10 +323,11 @@ Tier 3 + Midday + High Ambient: 1.40-1.50×
 ```
 
 ### Advanced Approaches
-1. **Segment by Hardware Type** → Build separate models
+1. **Segment by Hardware Type** → Build separate models or hardware-aware embeddings
 2. **Temporal Cross-Validation** → Use 24h-ahead forecasting (as per challenge rules)
-3. **Interaction Terms** → Ambient × Stack Tier, Hour × Tier
+3. **Interaction Terms** → Ambient × Stack Tier, Hour × Tier, Ambient × HardwareHighloadShare
 4. **Quantile Regression** → Directly model P90 instead of scaling point forecast
+5. **Wear & Lifecycle Features** → use `TtlEnergyCons` and visit-age signals for P90 robustness
 
 ---
 
@@ -300,7 +338,7 @@ The following factors likely influence power but are **NOT visible** in this dat
 - **Cargo Load Fraction** (full vs partially loaded) — affects interior heat capacity
 - **Reefer Unit Age/Maintenance** — newer units more efficient
 - **Humidity Level** (affects evaporator efficiency)
-- **Wind Speed & Cloud Cover** (affects ambient temp measurement)
+- **Wind Speed & Cloud Cover** (available only partially and likely confounded)
 - **Container Insulation Quality** (physical wear)
 
 These hidden factors likely explain why temperature and power correlation is weak (R²=0.024 for ambient).

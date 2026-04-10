@@ -1,0 +1,869 @@
+[
+  {
+    "epoch": 1,
+    "train_loss_norm": 0.39704493451409223,
+    "train_mae_kw": 67.16619110107422,
+    "train_mae_peak_kw": 108.67472839355469,
+    "train_pinball_p90": 27.76116180419922,
+    "train_composite_kw": 71.73774642944335,
+    "val_mae_kw": 61.176795959472656,
+    "val_mae_peak_kw": 44.32361602783203,
+    "val_pinball_p90": 13.713398933410645,
+    "val_composite_kw": 46.62816257476807,
+    "val_window_composites_kw": [
+      46.62816257476807
+    ],
+    "val_composite_ema_kw": 46.62816257476807,
+    "wind_bin_means_kw": [
+      896.41162109375,
+      896.6327514648438,
+      961.5504760742188
+    ],
+    "wx_temperature_bin_means_kw": [
+      922.6319580078125,
+      900.7400512695312,
+      932.0751342773438
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      921.4746704101562,
+      900.6156005859375,
+      933.3213500976562
+    ],
+    "tier3_bin_means_kw": [
+      892.0545043945312,
+      911.4346313476562,
+      952.1105346679688
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        914.3348999023438,
+        961.7518310546875
+      ],
+      "hw_ml3_share_lag1": [
+        953.9572143554688,
+        926.6883544921875
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 46.62816257476807,
+    "best_val_composite_ema_kw": 46.62816257476807,
+    "patience_left": 15
+  },
+  {
+    "epoch": 2,
+    "train_loss_norm": 0.21640762874508293,
+    "train_mae_kw": 55.51935577392578,
+    "train_mae_peak_kw": 54.46727752685547,
+    "train_pinball_p90": 15.741189956665039,
+    "train_composite_kw": 47.248099136352536,
+    "val_mae_kw": 32.46266174316406,
+    "val_mae_peak_kw": 29.357585906982422,
+    "val_pinball_p90": 8.490909576416016,
+    "val_composite_kw": 26.73678855895996,
+    "val_window_composites_kw": [
+      26.73678855895996
+    ],
+    "val_composite_ema_kw": 42.64988777160645,
+    "wind_bin_means_kw": [
+      853.0818481445312,
+      855.0014038085938,
+      950.4224853515625
+    ],
+    "wx_temperature_bin_means_kw": [
+      912.5387573242188,
+      850.5765991210938,
+      896.7803344726562
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      910.0921630859375,
+      852.2138671875,
+      897.58984375
+    ],
+    "tier3_bin_means_kw": [
+      836.3555297851562,
+      876.8684692382812,
+      946.6226196289062
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        889.2734375,
+        936.6307373046875
+      ],
+      "hw_ml3_share_lag1": [
+        915.3905639648438,
+        934.8956298828125
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 15
+  },
+  {
+    "epoch": 3,
+    "train_loss_norm": 0.18654213930533184,
+    "train_mae_kw": 53.1378288269043,
+    "train_mae_peak_kw": 52.555694580078125,
+    "train_pinball_p90": 12.588245391845703,
+    "train_composite_kw": 44.853271865844725,
+    "val_mae_kw": 37.90723419189453,
+    "val_mae_peak_kw": 78.22998809814453,
+    "val_pinball_p90": 11.115683555603027,
+    "val_composite_kw": 44.645750236511226,
+    "val_window_composites_kw": [
+      44.645750236511226
+    ],
+    "val_composite_ema_kw": 43.0490602645874,
+    "wind_bin_means_kw": [
+      845.0173950195312,
+      849.6126708984375,
+      939.6181030273438
+    ],
+    "wx_temperature_bin_means_kw": [
+      880.6446533203125,
+      842.5551147460938,
+      911.7074584960938
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      880.173828125,
+      845.0313110351562,
+      909.7874145507812
+    ],
+    "tier3_bin_means_kw": [
+      838.3676147460938,
+      867.4674682617188,
+      929.7625122070312
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        864.3787231445312,
+        946.1273193359375
+      ],
+      "hw_ml3_share_lag1": [
+        933.0863647460938,
+        892.0588989257812
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 14
+  },
+  {
+    "epoch": 4,
+    "train_loss_norm": 0.1751244115393336,
+    "train_mae_kw": 47.545806884765625,
+    "train_mae_peak_kw": 44.91073989868164,
+    "train_pinball_p90": 11.911253929138184,
+    "train_composite_kw": 39.628376197814944,
+    "val_mae_kw": 42.76322555541992,
+    "val_mae_peak_kw": 92.9612808227539,
+    "val_pinball_p90": 10.65088176727295,
+    "val_composite_kw": 51.40017337799072,
+    "val_window_composites_kw": [
+      51.40017337799072
+    ],
+    "val_composite_ema_kw": 44.71928288726807,
+    "wind_bin_means_kw": [
+      861.0545654296875,
+      860.4307861328125,
+      923.1936645507812
+    ],
+    "wx_temperature_bin_means_kw": [
+      881.5862426757812,
+      858.9638671875,
+      904.6114501953125
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      880.1158447265625,
+      860.5216064453125,
+      904.546875
+    ],
+    "tier3_bin_means_kw": [
+      855.6824951171875,
+      871.7603149414062,
+      918.1524047851562
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        871.3627319335938,
+        930.6410522460938
+      ],
+      "hw_ml3_share_lag1": [
+        923.4819946289062,
+        889.634765625
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 13
+  },
+  {
+    "epoch": 5,
+    "train_loss_norm": 0.16698283514356224,
+    "train_mae_kw": 44.88078689575195,
+    "train_mae_peak_kw": 42.59074401855469,
+    "train_pinball_p90": 10.731244087219238,
+    "train_composite_kw": 37.36386547088623,
+    "val_mae_kw": 50.97010040283203,
+    "val_mae_peak_kw": 35.574790954589844,
+    "val_pinball_p90": 8.903206825256348,
+    "val_composite_kw": 37.93812885284424,
+    "val_window_composites_kw": [
+      37.93812885284424
+    ],
+    "val_composite_ema_kw": 43.363052080383305,
+    "wind_bin_means_kw": [
+      888.5552978515625,
+      887.380859375,
+      960.630126953125
+    ],
+    "wx_temperature_bin_means_kw": [
+      923.056396484375,
+      883.815185546875,
+      930.4618530273438
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      921.6292114257812,
+      886.0323486328125,
+      929.721923828125
+    ],
+    "tier3_bin_means_kw": [
+      879.560546875,
+      901.4906005859375,
+      956.5599975585938
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        906.5341186523438,
+        958.2125854492188
+      ],
+      "hw_ml3_share_lag1": [
+        946.4541015625,
+        938.22265625
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 12
+  },
+  {
+    "epoch": 6,
+    "train_loss_norm": 0.16508580865414163,
+    "train_mae_kw": 43.38601303100586,
+    "train_mae_peak_kw": 40.43560791015625,
+    "train_pinball_p90": 10.930703163146973,
+    "train_composite_kw": 36.0098295211792,
+    "val_mae_kw": 42.6916618347168,
+    "val_mae_peak_kw": 87.38655853271484,
+    "val_pinball_p90": 10.610127449035645,
+    "val_composite_kw": 49.68382396697998,
+    "val_window_composites_kw": [
+      49.68382396697998
+    ],
+    "val_composite_ema_kw": 44.62720645770264,
+    "wind_bin_means_kw": [
+      858.3743896484375,
+      860.39892578125,
+      929.79833984375
+    ],
+    "wx_temperature_bin_means_kw": [
+      879.2158203125,
+      858.3334350585938,
+      911.4894409179688
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      878.0833129882812,
+      860.133056640625,
+      910.8634643554688
+    ],
+    "tier3_bin_means_kw": [
+      857.9102783203125,
+      868.3095703125,
+      923.3763427734375
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        867.6061401367188,
+        937.3468627929688
+      ],
+      "hw_ml3_share_lag1": [
+        931.0201416015625,
+        886.4099731445312
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 11
+  },
+  {
+    "epoch": 7,
+    "train_loss_norm": 0.1576479850261192,
+    "train_mae_kw": 41.6051139831543,
+    "train_mae_peak_kw": 43.272239685058594,
+    "train_pinball_p90": 9.569563865661621,
+    "train_composite_kw": 35.69814167022705,
+    "val_mae_kw": 43.45289993286133,
+    "val_mae_peak_kw": 62.10219955444336,
+    "val_pinball_p90": 10.387712478637695,
+    "val_composite_kw": 42.43465232849121,
+    "val_window_composites_kw": [
+      42.43465232849121
+    ],
+    "val_composite_ema_kw": 44.188695631860355,
+    "wind_bin_means_kw": [
+      857.1961669921875,
+      862.709228515625,
+      952.2205810546875
+    ],
+    "wx_temperature_bin_means_kw": [
+      889.6720581054688,
+      854.3404541015625,
+      928.6378784179688
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      889.1549682617188,
+      856.9758911132812,
+      926.60986328125
+    ],
+    "tier3_bin_means_kw": [
+      855.3295288085938,
+      874.9471435546875,
+      943.180908203125
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        871.7748413085938,
+        960.0393676757812
+      ],
+      "hw_ml3_share_lag1": [
+        946.6627807617188,
+        900.3765258789062
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 10
+  },
+  {
+    "epoch": 8,
+    "train_loss_norm": 0.1552410709058366,
+    "train_mae_kw": 38.554134368896484,
+    "train_mae_peak_kw": 40.242191314697266,
+    "train_pinball_p90": 9.638018608093262,
+    "train_composite_kw": 33.27732830047607,
+    "val_mae_kw": 47.68202209472656,
+    "val_mae_peak_kw": 84.2708969116211,
+    "val_pinball_p90": 10.769753456115723,
+    "val_composite_kw": 51.276230812072754,
+    "val_window_composites_kw": [
+      51.276230812072754
+    ],
+    "val_composite_ema_kw": 45.606202667902835,
+    "wind_bin_means_kw": [
+      868.1307983398438,
+      870.0814208984375,
+      939.1964721679688
+    ],
+    "wx_temperature_bin_means_kw": [
+      887.9902954101562,
+      863.7769165039062,
+      925.9154052734375
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      886.9854125976562,
+      866.4444580078125,
+      924.3314208984375
+    ],
+    "tier3_bin_means_kw": [
+      863.3934326171875,
+      882.2844848632812,
+      932.7517700195312
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        878.5478515625,
+        949.5756225585938
+      ],
+      "hw_ml3_share_lag1": [
+        941.8322143554688,
+        898.5582885742188
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 9
+  },
+  {
+    "epoch": 9,
+    "train_loss_norm": 0.14907707643460452,
+    "train_mae_kw": 40.91703796386719,
+    "train_mae_peak_kw": 37.38860321044922,
+    "train_pinball_p90": 9.849498748779297,
+    "train_composite_kw": 33.64499969482422,
+    "val_mae_kw": 48.18486404418945,
+    "val_mae_peak_kw": 111.99403381347656,
+    "val_pinball_p90": 12.342609405517578,
+    "val_composite_kw": 60.159164047241205,
+    "val_window_composites_kw": [
+      60.159164047241205
+    ],
+    "val_composite_ema_kw": 48.516794943770506,
+    "wind_bin_means_kw": [
+      859.4888916015625,
+      862.8212280273438,
+      925.040283203125
+    ],
+    "wx_temperature_bin_means_kw": [
+      871.3058471679688,
+      857.0552368164062,
+      919.07275390625
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      870.6094360351562,
+      858.9077758789062,
+      917.9713134765625
+    ],
+    "tier3_bin_means_kw": [
+      856.6204833984375,
+      873.625732421875,
+      918.0396728515625
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        865.4379272460938,
+        942.5887451171875
+      ],
+      "hw_ml3_share_lag1": [
+        936.86865234375,
+        877.1468505859375
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 8
+  },
+  {
+    "epoch": 10,
+    "train_loss_norm": 0.14851791726622154,
+    "train_mae_kw": 39.870391845703125,
+    "train_mae_peak_kw": 40.09859848022461,
+    "train_pinball_p90": 9.345480918884277,
+    "train_composite_kw": 33.8338716506958,
+    "val_mae_kw": 43.36710739135742,
+    "val_mae_peak_kw": 80.24471282958984,
+    "val_pinball_p90": 10.045002937316895,
+    "val_composite_kw": 47.76596813201904,
+    "val_window_composites_kw": [
+      47.76596813201904
+    ],
+    "val_composite_ema_kw": 48.36662958142022,
+    "wind_bin_means_kw": [
+      855.4019775390625,
+      860.4111328125,
+      942.2601928710938
+    ],
+    "wx_temperature_bin_means_kw": [
+      883.5665283203125,
+      851.398193359375,
+      923.494140625
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      882.7333984375,
+      853.999755859375,
+      921.8063354492188
+    ],
+    "tier3_bin_means_kw": [
+      851.1195068359375,
+      873.9617919921875,
+      934.206787109375
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        869.4866943359375,
+        952.3895874023438
+      ],
+      "hw_ml3_share_lag1": [
+        941.09423828125,
+        894.2826538085938
+      ]
+    },
+    "lr": 0.0004,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 7
+  },
+  {
+    "epoch": 11,
+    "train_loss_norm": 0.13754603139510968,
+    "train_mae_kw": 37.38755798339844,
+    "train_mae_peak_kw": 35.137325286865234,
+    "train_pinball_p90": 8.499703407287598,
+    "train_composite_kw": 30.934917259216306,
+    "val_mae_kw": 38.743499755859375,
+    "val_mae_peak_kw": 90.56739044189453,
+    "val_pinball_p90": 9.946444511413574,
+    "val_composite_kw": 48.53125591278076,
+    "val_window_composites_kw": [
+      48.53125591278076
+    ],
+    "val_composite_ema_kw": 48.39955484769233,
+    "wind_bin_means_kw": [
+      850.5014038085938,
+      850.5222778320312,
+      928.2738647460938
+    ],
+    "wx_temperature_bin_means_kw": [
+      877.0462646484375,
+      844.06298828125,
+      908.6318969726562
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      875.3316040039062,
+      846.9557495117188,
+      907.52294921875
+    ],
+    "tier3_bin_means_kw": [
+      839.5574951171875,
+      867.9292602539062,
+      922.9337768554688
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        866.1097412109375,
+        936.3932495117188
+      ],
+      "hw_ml3_share_lag1": [
+        925.9541015625,
+        892.5447998046875
+      ]
+    },
+    "lr": 0.0002,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 6
+  },
+  {
+    "epoch": 12,
+    "train_loss_norm": 0.1390916253856527,
+    "train_mae_kw": 37.08449172973633,
+    "train_mae_peak_kw": 29.302438735961914,
+    "train_pinball_p90": 8.55687141418457,
+    "train_composite_kw": 29.04435176849365,
+    "val_mae_kw": 55.041175842285156,
+    "val_mae_peak_kw": 72.10160064697266,
+    "val_pinball_p90": 9.240825653076172,
+    "val_composite_kw": 50.99923324584961,
+    "val_window_composites_kw": [
+      50.99923324584961
+    ],
+    "val_composite_ema_kw": 48.91949052732379,
+    "wind_bin_means_kw": [
+      884.3638305664062,
+      885.3623657226562,
+      948.6245727539062
+    ],
+    "wx_temperature_bin_means_kw": [
+      905.0363159179688,
+      879.5375366210938,
+      934.0911865234375
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      903.4322509765625,
+      881.89599609375,
+      933.3876342773438
+    ],
+    "tier3_bin_means_kw": [
+      876.5699462890625,
+      898.3759765625,
+      944.318115234375
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        895.6181640625,
+        957.9719848632812
+      ],
+      "hw_ml3_share_lag1": [
+        949.8095703125,
+        915.5830688476562
+      ]
+    },
+    "lr": 0.0002,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 5
+  },
+  {
+    "epoch": 13,
+    "train_loss_norm": 0.13587324218294486,
+    "train_mae_kw": 35.2060546875,
+    "train_mae_peak_kw": 32.70684814453125,
+    "train_pinball_p90": 8.365348815917969,
+    "train_composite_kw": 29.088151550292967,
+    "val_mae_kw": 44.33161926269531,
+    "val_mae_peak_kw": 105.41134643554688,
+    "val_pinball_p90": 10.731428146362305,
+    "val_composite_kw": 55.93549919128418,
+    "val_window_composites_kw": [
+      55.93549919128418
+    ],
+    "val_composite_ema_kw": 50.322692260115865,
+    "wind_bin_means_kw": [
+      858.5953979492188,
+      859.636474609375,
+      924.8189697265625
+    ],
+    "wx_temperature_bin_means_kw": [
+      875.8560791015625,
+      853.7252197265625,
+      913.6903686523438
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      874.1470947265625,
+      856.173828125,
+      913.0025634765625
+    ],
+    "tier3_bin_means_kw": [
+      850.0135498046875,
+      874.0413208007812,
+      919.9426879882812
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        869.4644165039062,
+        938.2755126953125
+      ],
+      "hw_ml3_share_lag1": [
+        931.0975952148438,
+        886.1512451171875
+      ]
+    },
+    "lr": 0.0002,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 4
+  },
+  {
+    "epoch": 14,
+    "train_loss_norm": 0.13594842520428868,
+    "train_mae_kw": 37.3060188293457,
+    "train_mae_peak_kw": 35.804840087890625,
+    "train_pinball_p90": 8.030020713806152,
+    "train_composite_kw": 31.000465583801265,
+    "val_mae_kw": 42.84786605834961,
+    "val_mae_peak_kw": 93.69805145263672,
+    "val_pinball_p90": 10.610421180725098,
+    "val_composite_kw": 51.65543270111084,
+    "val_window_composites_kw": [
+      51.65543270111084
+    ],
+    "val_composite_ema_kw": 50.58924034831486,
+    "wind_bin_means_kw": [
+      858.9944458007812,
+      859.7823486328125,
+      930.4931030273438
+    ],
+    "wx_temperature_bin_means_kw": [
+      881.6298217773438,
+      852.4967651367188,
+      915.4513549804688
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      880.12158203125,
+      855.3579711914062,
+      914.1715698242188
+    ],
+    "tier3_bin_means_kw": [
+      849.7775268554688,
+      875.8590698242188,
+      924.66748046875
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        872.3248291015625,
+        940.5452270507812
+      ],
+      "hw_ml3_share_lag1": [
+        931.948486328125,
+        894.1194458007812
+      ]
+    },
+    "lr": 0.0002,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 3
+  },
+  {
+    "epoch": 15,
+    "train_loss_norm": 0.13490822614450765,
+    "train_mae_kw": 33.71638488769531,
+    "train_mae_peak_kw": 33.74555969238281,
+    "train_pinball_p90": 8.57209300994873,
+    "train_composite_kw": 28.696278953552245,
+    "val_mae_kw": 43.9085693359375,
+    "val_mae_peak_kw": 88.16015625,
+    "val_pinball_p90": 10.579026222229004,
+    "val_composite_kw": 50.518136787414555,
+    "val_window_composites_kw": [
+      50.518136787414555
+    ],
+    "val_composite_ema_kw": 50.575019636134805,
+    "wind_bin_means_kw": [
+      868.1554565429688,
+      867.181640625,
+      927.82861328125
+    ],
+    "wx_temperature_bin_means_kw": [
+      889.24853515625,
+      861.886962890625,
+      912.37646484375
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      887.189208984375,
+      864.3124389648438,
+      912.0518188476562
+    ],
+    "tier3_bin_means_kw": [
+      858.16796875,
+      881.3347778320312,
+      924.527099609375
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        880.6235961914062,
+        934.8348388671875
+      ],
+      "hw_ml3_share_lag1": [
+        927.3368530273438,
+        901.5201416015625
+      ]
+    },
+    "lr": 0.0002,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 2
+  },
+  {
+    "epoch": 16,
+    "train_loss_norm": 0.1362012140755731,
+    "train_mae_kw": 33.87868881225586,
+    "train_mae_peak_kw": 37.22391128540039,
+    "train_pinball_p90": 7.945630073547363,
+    "train_composite_kw": 29.695643806457518,
+    "val_mae_kw": 39.5129280090332,
+    "val_mae_peak_kw": 83.34799194335938,
+    "val_pinball_p90": 10.38121509552002,
+    "val_composite_kw": 46.83710460662842,
+    "val_window_composites_kw": [
+      46.83710460662842
+    ],
+    "val_composite_ema_kw": 49.827436630233535,
+    "wind_bin_means_kw": [
+      862.0579833984375,
+      861.8348999023438,
+      925.4466552734375
+    ],
+    "wx_temperature_bin_means_kw": [
+      888.33349609375,
+      855.4789428710938,
+      905.9677124023438
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      886.2808227539062,
+      857.8743286132812,
+      905.6655883789062
+    ],
+    "tier3_bin_means_kw": [
+      851.210205078125,
+      876.1494140625,
+      922.8743896484375
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        876.3734741210938,
+        930.4472045898438
+      ],
+      "hw_ml3_share_lag1": [
+        919.8727416992188,
+        901.0501098632812
+      ]
+    },
+    "lr": 0.0002,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 1
+  },
+  {
+    "epoch": 17,
+    "train_loss_norm": 0.1355485591461988,
+    "train_mae_kw": 32.998809814453125,
+    "train_mae_peak_kw": 29.599790573120117,
+    "train_pinball_p90": 8.023904800415039,
+    "train_composite_kw": 26.984123039245606,
+    "val_mae_kw": 36.384788513183594,
+    "val_mae_peak_kw": 105.0425033569336,
+    "val_pinball_p90": 11.565495491027832,
+    "val_composite_kw": 52.01824436187744,
+    "val_window_composites_kw": [
+      52.01824436187744
+    ],
+    "val_composite_ema_kw": 50.26559817656232,
+    "wind_bin_means_kw": [
+      844.056396484375,
+      845.0715942382812,
+      908.7855834960938
+    ],
+    "wx_temperature_bin_means_kw": [
+      868.1289672851562,
+      838.1649169921875,
+      891.9807739257812
+    ],
+    "wx_humidity_bin_means_kw": null,
+    "ambient_avg_lag1_bin_means_kw": [
+      866.4779052734375,
+      840.3593139648438,
+      891.48046875
+    ],
+    "tier3_bin_means_kw": [
+      834.3718872070312,
+      859.5389404296875,
+      904.916015625
+    ],
+    "hardware_share_low_high_kw": {
+      "hw_scc6_share_lag1": [
+        856.4912109375,
+        917.6258544921875
+      ],
+      "hw_ml3_share_lag1": [
+        906.5888061523438,
+        878.5912475585938
+      ]
+    },
+    "lr": 0.0002,
+    "best_val_composite_kw": 26.73678855895996,
+    "best_val_composite_ema_kw": 42.64988777160645,
+    "patience_left": 0
+  }
+]

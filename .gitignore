@@ -2,3 +2,10 @@ participant_package/
 *.zip
 __MACOSX/
 main/study/
+submission/
+.cursor/
+.venv/
+.DS_Store
+exp.md
+notes.md
+predictions.csv

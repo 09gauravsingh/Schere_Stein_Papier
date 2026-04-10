@@ -1,0 +1,39 @@
+{
+  "max_epochs": 150,
+  "early_stop_patience": 15,
+  "early_stop_min_delta_kw": 0.08,
+  "early_stop_ema_alpha": 0.2,
+  "p90_head_lr_mult": 0.4,
+  "seed": 42,
+  "seq_len": 168,
+  "hidden_size": 128,
+  "lstm_num_layers": 2,
+  "batch_size": 64,
+  "lr": 0.0004,
+  "weight_decay": 0.0006,
+  "loss_w_all": 0.45,
+  "loss_w_peak": 0.35,
+  "loss_w_pin": 0.2,
+  "use_smooth_l1_peak": true,
+  "huber_beta_peak": 0.08,
+  "lr_plateau_patience": 7,
+  "use_attention": false,
+  "use_deep_head": false,
+  "head_dropout": 0.15,
+  "calendar_split": {
+    "val_strategy": "december",
+    "val_windows": null,
+    "late_dec_train_from_day": null,
+    "scaler_and_y_stats": "2025-01 .. 2025-12",
+    "train_targets": "2025-01 .. 2025-12",
+    "val_targets": "2026-01-01 .. 10",
+    "test_targets": "2026-01-11 .. 31",
+    "train_target_hours": 7844,
+    "val_target_hours_union": 223,
+    "val_window_target_hours": [
+      223
+    ],
+    "test_target_hours": 0,
+    "best_epoch": 2
+  }
+}

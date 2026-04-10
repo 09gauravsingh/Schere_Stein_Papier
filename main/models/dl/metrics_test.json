@@ -1,0 +1,19 @@
+{
+  "mae_all": null,
+  "mae_peak": null,
+  "pinball_p90": null,
+  "composite_score": null,
+  "test_eval_skipped": true,
+  "test_eval_skip_reason": "No hourly rows for test window 2026-01 days 11-31.",
+  "train_target_hours": 7844,
+  "val_target_hours": 223,
+  "val_window_target_hours": [
+    223
+  ],
+  "val_strategy": "december",
+  "best_epoch": 2,
+  "test_target_hours": 0,
+  "split_description": "train_2025_m01_m12_val_2026m01_d01_d10_test_2026m01_d11_d31",
+  "best_val_composite_kw": 26.73678855895996,
+  "epochs_ran": 17
+}

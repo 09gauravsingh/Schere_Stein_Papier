@@ -1,0 +1,12 @@
+# Core (tree fallback + data)
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+
+# Stronger tree models (optional; run_train falls back if missing)
+catboost>=1.2
+lightgbm>=4.0
+
+# DL path
+torch>=2.0
+tqdm>=4.66
